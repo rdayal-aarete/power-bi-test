@@ -1,12 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
-import Card from './Components/Card';
+import Landing from '../src/pages/Landing'
+import {BrowserRouter} from 'react-router-dom'
+import Main from './Main';
 
 function App() {
   return (
-    <div className="App">
-     <Card/>
-    </div>
+    <BrowserRouter>
+   
+      <Main/>
+   
+    </BrowserRouter>
   );
 }
 
