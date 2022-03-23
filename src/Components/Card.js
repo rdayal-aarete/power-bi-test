@@ -4,12 +4,12 @@ import React from 'react'
 const Card =props=>(
     <div>
         
-        <div class="flex flex-col bg-white rounded-lg shadow-md w-full m-2 overflow-hidden sm:w-52 w-327.74 h-167.4">
-        <img src={props.icon} alt="" class="h-38.76 w-138.79 m-10"/>
+        <div class="flex flex-col bg-white m-2 overflow-hidden max-w-sm rounded shadow-lg max-w-sm bg-white-500 hover:bg-blue-500 active:bg-blue-500 ">
+        <img src={props.image} alt="" class="h-38.76 w-138.79 m-10"/>
         </div>
         
         </div>
   )
 
 
-export default Card
+export default Card;
