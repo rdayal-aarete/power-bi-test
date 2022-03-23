@@ -1,12 +1,12 @@
-import {Routes , Route} from 'react-router-dom'
-import Landing from './pages/Landing'
+import { Routes, Route } from "react-router-dom";
+import Landing from "./pages/Landing";
 
 function Main() {
   return (
     <Routes>
-        <Route path ='/landingpage' element={<Landing/>}/>
+      <Route path="/landingpage" element={<Landing />} />
     </Routes>
-  )
+  );
 }
 
-export default Main
+export default Main;
