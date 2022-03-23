@@ -3,10 +3,13 @@ import "../App.css";
 import Lottie from "react-lottie";
 import animationData from "../lottie/line-loader";
 import tagLine from "../assets/Tagline.svg";
+import { useNavigate } from "react-router-dom";
 
 import "./style.css";
 
 function SplashPage() {
+  const navigate = useNavigate();
+
   const defaultOptions = {
     loop: false,
     autoplay: true,
@@ -71,7 +74,12 @@ function SplashPage() {
       </div>
       <div className="h-1/2" />
       <div className="flex flex-col items-center animate-taglineSlideUp opacity-0">
-        <button className="bg-btn-light w-14 h-14 bg-red-600 rounded-full">
+        <button
+          className="bg-btn-light w-14 h-14 bg-red-600 rounded-full"
+          onClick={() => {
+            navigate("/landingpage");
+          }}
+        >
           <svg
             xmlns="http://www.w3.org/2000/svg"
             class="h-6 w-6 stroke-dark-blue inline-block"

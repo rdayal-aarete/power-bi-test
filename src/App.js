@@ -1,8 +1,14 @@
 import "./App.css";
-import SplashPage from "./pages/SplashPage";
+import Landing from "../src/pages/Landing";
+import { BrowserRouter } from "react-router-dom";
+import Main from "./Main";
 
 function App() {
-  return <SplashPage />;
+  return (
+    <BrowserRouter>
+      <Main />
+    </BrowserRouter>
+  );
 }
 
 export default App;
