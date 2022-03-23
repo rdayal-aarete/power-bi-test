@@ -1,21 +1,23 @@
-import Card from "../Components/Card";
+import Card from "../components/Card";
+import tableau from "../images/tableau.svg";
+import powerBi from "../images/power-bi.svg";
+import microStrategy from "../images/microStrategy.svg";
 
 const items = [
   {
     id: "1",
-    image:
-      "file:///C:/Users/rray/Desktop/new/power-bi-test/public/power-bi.svg",
+    image: tableau,
   },
   {
     id: 2,
-    image: "../images/tableau.png",
+    image: powerBi,
   },
   {
     id: 3,
-    image: require("../images/microStrategy.svg"),
+    image: microStrategy,
   },
 ];
 
 export function itemsMap() {
-  return items.map((d) => <Card image={d.image} key={d.id} />);
+  return items.map((d) => <Card image={d.image} />);
 }
